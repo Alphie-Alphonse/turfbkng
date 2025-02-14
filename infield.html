@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infield Turf</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00203F, #ADEFD1);
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .rating {
+            font-size: 24px;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .images img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .book-now {
+            margin-bottom: 20px;
+        }
+        .book-now button {
+            background: #008000;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .book-now button:hover {
+            background: #32CD32;
+        }
+        .review-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .review-section h2 {
+            margin-top: 0;
+        }
+        .review-section textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .review-section button {
+            background: #ffcc00;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Infield Turf</h1>
+        <div class="rating">Rating: 4.7⭐</div>
+        <div class="images">
+            <img src="https://example.com/image1.jpg" alt="Infield Turf Image 1">
+            <img src="https://example.com/image2.jpg" alt="Infield Turf Image 2">
+            <img src="https://example.com/image3.jpg" alt="Infield Turf Image 3">
+        </div>
+        <div class="description">
+            Infield Turf offers an excellent venue for sports enthusiasts. The facility is renowned for its premium artificial turf, bright lighting for evening matches, and ample space for football or other sports. It’s perfect for hosting matches or practicing your skills with friends.
+        </div>
+        <div class="book-now">
+            <button onclick="window.location.href='booking.html'">Book Now</button>
+        </div>
+        <div class="review-section">
+            <h2>Submit Your Review</h2>
+            <form>
+                <textarea placeholder="Write your review here..." required></textarea><br>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            width: 50%;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: green;
+        }
+        .details {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Booking Confirmed!</h1>
+        <p class="details">You have successfully booked <strong id="turfName">...</strong></p>
+        <p>We will contact you soon for further details.</p>
+        <button onclick="goHome()">Go to Home</button>
+    </div>
+
+    <script>
+        // Get the selected turf from URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const turf = params.get("turf");
+
+        if (turf) {
+            document.getElementById("turfName").innerText = turf;
+        } else {
+            document.getElementById("turfName").innerText = "Unknown Turf";
+        }
+
+        function goHome() {
+            window.location.href = "index.html"; // Change this to your homepage
+        }
+    </script>
+
+</body>
+</html>
